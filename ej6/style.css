@@ -1,0 +1,31 @@
+/*CSS enlazado a display.html*/
+
+#negrita{display: block;}
+
+.p1, .p2{display: inline;}
+
+.p4, .p5{
+    margin-left: 3%;
+    display: list-item;
+    list-style-type: square;
+}
+
+.p6{display: none;}
+
+.bloqueenlinea{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}   
+
+.p9, .p10, .p11 {display: table-cell;}
+
+.p12{
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+
+.p13{position: static;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/
