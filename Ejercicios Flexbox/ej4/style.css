@@ -1,0 +1,51 @@
+/*CSS enlazado a index.html (Ejercicio 4 - Flexbox)*/
+
+.main-container{
+    margin: auto;
+    background-color: aquamarine;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container{
+    background-color: #555;
+    display: flex;
+    width: 99%;
+    height: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cajas{
+    display: flex;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 50%;
+    color: white;
+}
+
+#cont1{align-items: flex-end;}
+#cont1 .cajas:nth-child(3){align-self: flex-start;}
+
+#cont2{align-items: flex-start;}
+#cont2 .cajas:nth-child(3){align-self: center;}
+
+#cont3{
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap; /*solución de Sergio*/
+}
+#cont3 .cajas:first-child{height: 3em;}
+#cont3 .cajas:nth-child(2){height: 2.3em;}
+#cont3 .cajas:nth-child(3){height: 4em;}
+#cont3 .cajas:nth-child(4){height: 5em;}
+#cont3 .cajas:last-child{height: 1em;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

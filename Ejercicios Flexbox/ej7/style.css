@@ -1,0 +1,15 @@
+/*CSS enlazado a index.html (Ejercicio 7 - Flexbox)*/
+
+.container{display: flex;}
+
+.container-top-bot{
+    background-color: rgb(26, 59, 85);
+    color: white;
+    padding: 20px;
+}
+
+.container-top-bot > nav{
+    justify-content: flex-end;
+}
+
+/*ALFREDO PUERTA GALLEGO - DW1E*/

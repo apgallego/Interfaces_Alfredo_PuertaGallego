@@ -1,0 +1,35 @@
+/*CSS enlazado a index.html (Ejercicio 6 - Flexbox)*/
+
+.container{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.cajas{
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+#cont1{
+    background-color: #AAA;
+    height: 60px;
+}
+#cont1 .cajas{
+    flex-basis: 30%;
+    flex-shrink: 0;
+}
+#cont1 .cajas:first-child, #cont1 .cajas:nth-child(2){order: 1;} /*poner cualquier otro valor por encima de 0 también funciona, ya que 'order' por defecto es 0*/ 
+/*↑↑ también podría asignarse un order distinto a cada uno de los items, pero veo esto más conciso*/
+
+#cont2{
+    background-color: darkcyan;
+    height: 200px;
+}
+#cont2 .cajas{flex-basis: 50%;}
+#cont2 .cajas:nth-child(2){flex-shrink: 4;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

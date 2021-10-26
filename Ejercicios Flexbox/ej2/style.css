@@ -1,0 +1,24 @@
+/*CSS enlazado a index.html (Ejercicio 2 - Flexbox)*/
+
+.contenedor{
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cajas{
+    background-color: red;
+    text-align: center;
+    line-height: 2.5rem;
+    color: white;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

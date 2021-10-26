@@ -1,0 +1,5 @@
+pegar en el ej 14 de CSS
+-----------------------
+
+/* Sergio recomienda poner display: flex; en el contenedor principal
+o utilizarlo en ul. Quitar margins / paddings y usar posicionamiento absoluto */

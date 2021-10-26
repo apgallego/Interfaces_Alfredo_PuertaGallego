@@ -1,0 +1,46 @@
+/*CSS enlazado a posicionamiento2.html*/
+
+#fija {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+    z-index: s2;
+}
+
+/*****no es necesario porque la posición por defecto ya es 'static'*/
+/* #estatica_exp{position: static;}
+#estatica_imp{position: static;} */
+
+#absoluta1{
+	position: absolute;
+    top: 390px;
+	right: 50px;
+}
+
+#absoluta2{
+	position: absolute;
+	left: 165px; 
+	top: 285px; 
+	z-index: 0;
+}
+
+#absoluta3{
+	position: absolute; 
+	left: 25px; 
+	top: 305px; 
+	z-index: 1;
+}
+
+#relativa{
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+#sticky{
+	position: sticky;
+	bottom: 0;
+	left: 0;
+} 
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

@@ -1,0 +1,42 @@
+/*CSS enlazado a index.html (Ejercicio 5 - Flexbox)*/
+
+.container{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#cont1{
+    background-color: #AAA;
+    height: 60px; 
+}
+
+#cont2{
+    background-color: darkcyan;
+    height: 200px;
+}
+
+.cajas{
+    background-color: burlywood;
+    border: 1px solid black;
+    /* width: 150px; */
+}
+
+#cont1 .cajas:first-child{order: 1;} /*poner cualquier otro valor por encima de 0 también funciona, ya que 'order' por defecto es 0*/ 
+#cont1 .cajas:first-child, #cont1 .cajas:nth-child(2){flex-grow: 1;}
+#cont1 .cajas:nth-child(3){flex-grow: 3;}
+#cont1 .cajas:last-child{flex-grow: 4;}
+
+#cont2 .cajas:first-child, #cont2 .cajas:last-child{flex-grow: 1;}
+#cont2 .cajas:nth-child(2){flex-grow: 3;}
+
+/* **
+    el ejercicio puede hacerse poniendo flex-grow a cada uno de los elementos
+    o poniendo un 'width' por defecto y aplicando flex-grow a las cajas cuyo tamaño
+    queremos cambiar o compensar.
+*/
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

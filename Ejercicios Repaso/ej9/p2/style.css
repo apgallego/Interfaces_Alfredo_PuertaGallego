@@ -1,0 +1,34 @@
+/*CSS enlazado a index.html (ejercicio 9)*/
+*{box-sizing: border-box;}
+
+.contenedor{
+    width: 40rem;
+    height: 35rem;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0.5em;
+}
+
+.contenedor > div{
+    width: 12rem;
+    height: 10rem;
+    /* position: center; */
+    border: 1px solid black;
+    margin-left: 11.5px;
+    margin-top: 10px;
+}
+
+.caja1, .caja2, .caja3 {background-color: white;}
+
+.caja4, .caja5, .caja6 {background-color: darkgreen;}
+
+.caja7, .caja8, .caja9 {background-color: blue;}
+
+.caja2, .caja6 {visibility: hidden}
+
+.caja4, .caja8 {display: none}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/
