@@ -1,15 +1,70 @@
 /*CSS enlazado a index.html (Ejercicio 7 - Flexbox)*/
 
-.container{display: flex;}
-
 .container-top-bot{
+    display: flex;
     background-color: rgb(26, 59, 85);
     color: white;
     padding: 20px;
 }
 
-.container-top-bot > nav{
-    justify-content: flex-end;
+.container-top-bot ul{
+    display: flex;
+    list-style: none;
 }
+
+.container-top-bot li a{
+    text-decoration: none;
+}
+
+/*body*/
+
+.main-container{
+    display: flex;
+}
+
+section{
+    display: flex;
+    width: 70%;
+    height: 20em;
+    padding: 10px;
+}
+
+article{
+    margin: 10px;
+    height: 88%;
+    border-bottom: 1px solid black;
+}
+article > h2{margin-bottom: 0;}
+article > p{margin-top: 0;}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+    width: 30%;
+}
+
+.sub-container{
+    display: flex;
+    width: 90%;
+    height: 45%;
+    background-color: orangered;
+    color: white;
+}
+
+.sub-container > .cajas{
+    background-color: brown;
+    /*borrar el border*/
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+
+#sub-cont1 > .cajas:last-child,
+#sub-cont2 > .cajas:first-child
+{align-self: flex-end;}
 
 /*ALFREDO PUERTA GALLEGO - DW1E*/
