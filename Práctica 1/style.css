@@ -47,12 +47,16 @@ nav{
     flex-grow: 4;
     background-color: white;
     justify-content: center;
+    /* z-index: 1; */
+
 }
 nav > ul{
+    /* z-index: 1; */
     background-color: white;
 }
 
 .nav-container{
+    /* z-index: 1; */
     padding: 0.5em;
     display: flex;
     width: 100%;
@@ -60,6 +64,7 @@ nav > ul{
 }
 
 .nav-container ul li{
+    /* z-index: 1; */
     margin: 2em;
     display: inline-block;
     line-height: 0.2em;
@@ -76,7 +81,6 @@ nav > ul{
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    z-index: -1;
 }
 
 .options{
@@ -97,11 +101,13 @@ nav > ul{
     justify-content: center;
     align-items: center;
 }
+
 .options .opt:hover{
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 2px 2px 3px black;
     transform: translate(-2px, -2px);
     transition: 0.15s;
 }
+
 .main-side-top-bar > p{
     display: flex;
     align-items: center;
@@ -164,8 +170,20 @@ nav > ul{
     align-items: center;
     justify-content: center;
 }
-.carrousel-box-content img{
-    width: 100px;
+
+.carrousel-box-content:hover{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 5px 5px 3px black;
+    transform: translate(-2px, -2px);
+    transition: 0.15s;
+}
+
+/* .carrousel-box-content img{width: 100px;} */
+
+.orange-square{
+    width: 80px;
+    height: 80px;
+    border: 5px solid orangered;
 }
 
 .carrousel-box-content p:nth-child(3){
@@ -209,6 +227,16 @@ section > aside{
     background-color: rgb(18, 29, 92);
     width: 225px;
     height: 3rem;
+    color: white;
+}
+
+
+/*footer*/
+.main-footer{background-color: rgb(18, 29, 92);}
+
+.final-footer{
+    padding: 1.5em;
+    background-color: black;
     color: white;
 }
 
