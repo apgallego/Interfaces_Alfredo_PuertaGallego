@@ -1,8 +1,12 @@
 /*CSS enlazado a index.html (Práctica 1)*/
 
+/*globales*/
 *{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
+    /*borrar*/
+    /* border: 1px solid black; */
+    /* background-color: red; */
 }
 
 a{text-decoration: none;}
@@ -13,6 +17,7 @@ li{list-style-type: none;}
     color: white;
 }
 
+/*header*/
 header{
     display: flex;
     width: 100%;
@@ -21,25 +26,57 @@ header{
     align-items: center;
 }
 
+/*body*/
 .main-container{
     position: sticky;
     top: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* -- nav*/
+.nav-container > .nav-img{
+    padding-left: 3rem;
+    flex-grow: 1;
+}
+.nav-img img{width: 8rem;}
+
+nav{
+    display: flex;
+    flex-grow: 4;
+    background-color: white;
+    justify-content: center;
+}
+nav > ul{
+    background-color: white;
 }
 
 .nav-container{
+    padding: 0.5em;
     display: flex;
     width: 100%;
-    justify-content: center;
-
+    background-color: white;
 }
-.nav-container > img{width: 30%;}
 
+.nav-container ul li{
+    margin: 2em;
+    display: inline-block;
+    line-height: 0.2em;
+}
+
+.nav-container ul li a{color: black;}
+.nav-container ul li a:hover{box-shadow: 1px 1px 3px black;}
+
+/*-- main text*/
 .btc-def{
+    position: relative;
+    margin: auto;
+    width: 60%;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
+    z-index: -1;
 }
 
 .options{
@@ -65,9 +102,19 @@ header{
     transform: translate(-2px, -2px);
     transition: 0.15s;
 }
+.main-side-top-bar > p{
+    display: flex;
+    align-items: center;
+}
+
+.main-side-top-bar > p::before{
+    content: url('misc/black_circle.png');
+    margin-right: 10px;
+    /* background-image: url('misc/black_circle.png'); */
+}
 
 .main-side-top-bar{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 5%;
     background-color: white;
     margin-bottom: 20px;
@@ -77,15 +124,52 @@ header{
     align-items: center;
 }
 
-.main-side-top-bar > img{
-    width: 36px;
-}
+.main-side-top-bar > img{width: 36px;}
 
 .carrousel p, .carrousel a{color: white;}
 
 .carrousel{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content: space-evenly; */
     background-color: rgb(18, 29, 92);
+    width: 100%;
+}
+.carrousel p {
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+}
+
+/* .carrousel-box{
+    display: flex;
+    background-color: red;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: flex-end;
+    width: 50%;
+    height: 100%;
+} */
+
+.carrousel-box-content{
+    margin: 50px 25px;
+    padding: 0;
+    background-color: black;
+    width: 14em;
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carrousel-box-content img{
+    width: 100px;
+}
+
+.carrousel-box-content p:nth-child(3){
+    font-size: 10px;
 }
 
 section{
@@ -93,7 +177,7 @@ section{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: grey;
+    /* background-color: grey; */
 }
 /* section > *{border: 1px solid black;} */
 
@@ -110,15 +194,21 @@ section > aside{
 }
 
 #article-button{
+    margin: 1rem;
     display: flex;
-    background-color: rgb(18, 29, 92);
-    align-items: center;
-    text-align: center;
-    width: 200px;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
     height: 50px;
 }
 
 #article-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 29, 92);
+    width: 225px;
+    height: 3rem;
     color: white;
 }
 
