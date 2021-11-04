@@ -26,7 +26,7 @@ header{
 
 /*body*/
 /* -- nav*/
-.nav-container > .nav-img{
+.nav-container:first-child{
     padding-left: 3rem;
     /* flex-grow: 1; */
 }
@@ -46,7 +46,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    padding: 0.5em;
+    padding: 0 3em;
 }
 
 .nav-container ul li{
@@ -67,6 +67,7 @@ nav{
     font-weight: bold;
 }
 
+/*--buttons*/
 .options{
     display: flex;
     width: 100%;
@@ -85,12 +86,13 @@ nav{
     justify-content: center;
     align-items: center;
     width: 15em;
-    height: 2em;
+    height: 3em;
     transition: transform ease-in-out 0.15s;
 }
 
+/*--top-bar (main content) : ¿Qué es Break The Chains?*/
 .options .opt a:hover{
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 0px 0px 10px black;
     transform: scale(1.1);
 }
 
@@ -114,6 +116,7 @@ nav{
     align-items: center;
 }
 
+/*--carrousel*/
 .carrousel p, .carrousel a{color: white;}
 
 .carrousel{
@@ -145,7 +148,7 @@ nav{
 
 .carrousel-box-content:hover{
     background-color: rgb(31, 31, 31);
-    box-shadow: 5px 5px 3px black;
+    box-shadow: 0px 0px 10px black;
     transform: scale(1.1);
 }
 
@@ -159,6 +162,7 @@ nav{
     font-size: 10px;
 }
 
+/*--main section (text + logo)*/
 section{
     display: flex;
     flex-wrap: wrap;
@@ -167,11 +171,12 @@ section{
 }
 
 .article-text{
-    /* padding: 20px; */
     margin: 2em;
     width: 25em;
     text-align: justify;
+    text-align-last: justify;
 }
+
 section > aside{
     /* padding: 20px; */
     margin: 2em;
@@ -198,6 +203,12 @@ section > aside{
     color: white;
     width: 15em;
     height: 3em;
+    transition: all ease-in-out 0.2s;
+}
+#article-button a:hover{
+    background-color: rgb(33, 66, 149);
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
 }
 
 
@@ -207,6 +218,7 @@ section > aside{
     background-color: rgb(11, 21, 46);
     display: flex;
     align-items: center;
+    /* align-items: flex-start; */
 }
 
 .footer-button a{
@@ -218,13 +230,13 @@ section > aside{
     justify-content: center;
     align-items: center;
     width: 15em;
-    height: 2em;
+    height: 3em;
     transition: transform ease-in-out 0.15s;
     animation: glow 1s infinite alternate;
     flex-grow: 1;
 }
 .footer-button a:hover{
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 0px 0px 10px black;
     transform: scale(1.1);
 }
 
@@ -235,12 +247,31 @@ section > aside{
 }
 
 .others{
+    /* border: 1px solid black; */
+    padding: 0 3em;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
     flex-grow: 3;
 }
 
+.others > div[class^="footer-list"]{margin-top: 30%;}
+
+.footer-box{
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-box a{color: #555;}
+
+.footer-theme-box a{color: white;}
+
+.footer-box a:hover, .footer-theme-box a:hover {text-decoration: underline;}
+
+/*--bottom footer : Copyright*/
 .final-footer{
     padding: 1.5em;
     background-color: black;
