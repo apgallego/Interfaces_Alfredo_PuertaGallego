@@ -4,9 +4,6 @@
 *{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
-    /*borrar*/
-    /* border: 1px solid black; */
-    /* background-color: red; */
 }
 
 a{text-decoration: none;}
@@ -26,23 +23,14 @@ header{
 
 /*body*/
 /* -- nav*/
-.nav-container:first-child{
-    padding-left: 3rem;
-    /* flex-grow: 1; */
-}
 .nav-img img{width: 8rem;}
-
-nav{
-    /* flex-grow: 4; */
-    background-color: white;
-    /* justify-content: flex-end; */
-}
+nav{background-color: white;}
 
 .nav-container{
     background-color: white;
     position: sticky;
-    display: flex;
     top: 0px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
@@ -50,7 +38,7 @@ nav{
 }
 
 .nav-container ul li{
-    margin: 2em;
+    margin: 1.5em;
     display: inline;
     line-height: 0.2em;
 }
@@ -61,20 +49,22 @@ nav{
 /*-- main text*/
 .btc-def{
     margin: auto;
+    margin-top: 1em;
     width: 60%;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 
 /*--buttons*/
 .options{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: 7em;
     gap: 2em;
-    justify-content: center;
-    align-items: center;
 }
 
 .options .opt a{
@@ -158,9 +148,7 @@ nav{
     border: 5px solid rgb(244, 122, 41);
 }
 
-.carrousel-box-content p:nth-child(3){
-    font-size: 10px;
-}
+.carrousel-box-content p:nth-child(3){font-size: 10px;}
 
 /*--main section (text + logo)*/
 section{
@@ -178,12 +166,11 @@ section{
 }
 
 section > aside{
-    /* padding: 20px; */
     margin: 2em;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    width: 40%;
+    justify-content: center;
+    width: 30%;
 }
 
 #article-button{
@@ -203,7 +190,7 @@ section > aside{
     color: white;
     width: 15em;
     height: 3em;
-    transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.15s;
 }
 #article-button a:hover{
     background-color: rgb(33, 66, 149);
@@ -211,16 +198,16 @@ section > aside{
     transform: scale(1.1);
 }
 
-
 /*footer*/
 .main-footer{
-    padding: 2em;
+    padding: 0 4em;
     background-color: rgb(11, 21, 46);
     display: flex;
     align-items: center;
-    /* align-items: flex-start; */
+    justify-content: space-between;
 }
 
+/*--footer button*/
 .footer-button a{
     margin: auto;
     color: white;
@@ -233,7 +220,6 @@ section > aside{
     height: 3em;
     transition: transform ease-in-out 0.15s;
     animation: glow 1s infinite alternate;
-    flex-grow: 1;
 }
 .footer-button a:hover{
     box-shadow: 0px 0px 10px black;
@@ -246,17 +232,16 @@ section > aside{
     to{box-shadow: 0;}
 }
 
+/*--footer links*/
 .others{
-    /* border: 1px solid black; */
-    padding: 0 3em;
+    padding: 1em;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
-    flex-grow: 3;
 }
 
-.others > div[class^="footer-list"]{margin-top: 30%;}
+.others > div[id^="footer-list"]{margin-top: 10%;}
 
 .footer-box{
     height: 3em;
@@ -266,9 +251,7 @@ section > aside{
 }
 
 .footer-box a{color: #555;}
-
 .footer-theme-box a{color: white;}
-
 .footer-box a:hover, .footer-theme-box a:hover {text-decoration: underline;}
 
 /*--bottom footer : Copyright*/
