@@ -1,0 +1,28 @@
+/*CSS enlazado a Ejercicio 2 (cajas)_APG.html -- Examen 1*/
+
+.main-container{
+    height: 65vh;
+    font-size: 22px;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.box{
+    border: 1px solid blue;
+    border-style: dotted;
+    flex-basis: 45%;
+    flex-grow: 1;
+}
+.box:nth-child(3){
+    margin-top: 0.5rem;
+    border-color: red;
+    flex-grow: 2;
+}
+
+.main-container .box:first-child ol{list-style-type: upper-roman;}
+.main-container .box:first-child ol li::marker{font-weight: bold;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

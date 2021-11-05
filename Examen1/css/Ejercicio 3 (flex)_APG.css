@@ -1,0 +1,37 @@
+/*CSS enlazado a Ejercicio 3 (flex)_APG.html -- Examen 1*/
+
+.main-container{
+    padding: 0.5rem;
+    height: 80vmin;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid black;
+    gap: 0.5rem;
+}
+
+.big-container{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    flex-grow: 7;
+}
+.big-container p:last-child{align-self: flex-end;}
+
+.small-container{
+    height: 30%;
+    border: 1px solid black;
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; */
+    /* ----> por defecto se coloca así*/
+    flex-grow: 3;
+}
+
+.small-container > a{
+    text-decoration: none;
+    color: red;
+}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/
