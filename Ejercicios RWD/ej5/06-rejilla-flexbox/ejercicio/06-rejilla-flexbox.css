@@ -38,9 +38,6 @@ div {
 }
 
 @media screen and (min-width: 1024px){
-    div.row {
-        display: flex;
-    }
     
     div.row .element{
         color: green;
@@ -53,7 +50,7 @@ div {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
-        height: 15.5em;
+        /* height: 15.5em; */
     }
 
     div.row .element{
