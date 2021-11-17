@@ -281,6 +281,12 @@ section > aside{
         flex-wrap: wrap;
         padding: 0;
     }
+    div.nav-container ul li{margin: 10px;}
+    /* div.nav-container ul li::before,
+    div.nav-container ul li::after{
+        content: ' || ';
+        color: #CCC;
+    } */
 
     div.article-text{width: 80vw;}
     div.main-footer{flex-direction: column;}
