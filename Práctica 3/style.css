@@ -272,9 +272,8 @@ section > aside{
 /* ------- RWD ------- */
 
 @media screen and (max-width: 850px){
-    div.nav-container{
-        flex-direction: column;
-    }
+    header{text-align: center;}
+    div.nav-container{flex-direction: column;}
 
     div.nav-container ul{
         display: flex;
@@ -283,9 +282,10 @@ section > aside{
         padding: 0;
     }
 
+    div.article-text{width: 80vw;}
     div.main-footer{flex-direction: column;}
     div.footer-button{margin: 4em 0 2em 0;}
-    div.footer-button a {text-align: center;}
+    div#article-button a {text-align: center;}
 
     div.others{flex-wrap: nowrap;}
     div.others ul{padding: 0;}
