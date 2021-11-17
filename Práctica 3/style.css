@@ -271,7 +271,7 @@ section > aside{
 
 /* ------- RWD ------- */
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 900px){
     header{text-align: center;}
     div.nav-container{flex-direction: column;}
 
@@ -280,8 +280,9 @@ section > aside{
         justify-content: center;
         flex-wrap: wrap;
         padding: 0;
+        margin-bottom: 20px;
     }
-    div.nav-container ul li{margin: 10px;}
+    div.nav-container ul li{margin: 20px;}
     /* div.nav-container ul li::before,
     div.nav-container ul li::after{
         content: ' || ';
@@ -292,7 +293,7 @@ section > aside{
     div.article-text{width: 80vw;}
     div.main-footer{flex-direction: column;}
     div.footer-button{margin: 4em 0 2em 0;}
-    div#article-button a {text-align: center;}
+    div#article-button a{justify-content: center;}
 
     div.others{flex-wrap: nowrap;}
     div.others ul{padding: 0;}
