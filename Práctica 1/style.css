@@ -1,0 +1,264 @@
+/*CSS enlazado a index.html (Práctica 1)*/
+
+/*globales*/
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a{text-decoration: none;}
+li{list-style-type: none;}
+
+/*header*/
+header{
+    background-color: rgb(244, 122, 41);
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid orangered;
+}
+
+/*body*/
+/* -- nav*/
+.nav-img img{width: 8rem;}
+nav{background-color: white;}
+
+.nav-container{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0 3em;
+}
+
+.nav-container ul li{
+    margin: 1.5em;
+    display: inline;
+    line-height: 0.2em;
+}
+
+.nav-container ul li a{color: black;}
+.nav-container ul li a:hover{text-decoration: underline;}
+
+/*-- main text*/
+.btc-def{
+    margin: auto;
+    margin-top: 1em;
+    width: 60%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/*--buttons*/
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 7em;
+    gap: 2em;
+}
+
+.options .opt a{
+    margin: auto;
+    color: white;
+    border: 1px solid rgb(255, 60, 0);
+    background-color: rgb(244, 128, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 3em;
+    transition: transform ease-in-out 0.15s;
+}
+
+/*--top-bar (main content) : ¿Qué es Break The Chains?*/
+.options .opt a:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+
+.main-side-top-bar > p{
+    display: flex;
+    align-items: center;
+}
+
+.main-side-top-bar > p::before{
+    content: url('misc/black_circle.png');
+    margin-right: 10px;
+}
+
+.main-side-top-bar{
+    height: 5%;
+    background-color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--carrousel*/
+.carrousel p, .carrousel a{color: white;}
+
+.carrousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(11, 21, 46);
+    width: 100%;
+}
+.carrousel p {
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    line-height: 4.5em;
+}
+
+.carrousel-box-content{
+    margin: 50px 25px;
+    padding: 0;
+    background-color: black;
+    width: 14em;
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.carrousel-box-content:hover{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+
+.orange-square{
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(244, 122, 41);
+}
+
+.carrousel-box-content p:nth-child(3){font-size: 10px;}
+
+/*--main section (text + logo)*/
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-text{
+    margin: 2em;
+    width: 25em;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+section > aside{
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+#article-button{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 2em;
+}
+
+#article-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 21, 46);
+    color: white;
+    width: 15em;
+    height: 3em;
+    transition: all ease-in-out 0.15s;
+}
+#article-button a:hover{
+    background-color: rgb(33, 66, 149);
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+
+/*footer*/
+.main-footer{
+    padding: 0 4em;
+    background-color: rgb(11, 21, 46);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--footer button*/
+.footer-button a{
+    margin: auto;
+    color: white;
+    border: 1px solid rgb(255, 60, 0);
+    background-color: rgb(244, 128, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 3em;
+    transition: transform ease-in-out 0.15s;
+    animation: glow 1s infinite alternate;
+}
+.footer-button a:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.1);
+}
+
+/*extra : animación*/
+@keyframes glow{
+    from{box-shadow: 0 0 10px orange;}
+    to{box-shadow: 0;}
+}
+
+/*--footer links*/
+.others{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.others > div[id^="footer-list"]{margin-top: 10%;}
+
+.footer-box{
+    height: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-box a{color: #555;}
+.footer-theme-box a{color: white;}
+.footer-box a:hover, .footer-theme-box a:hover {text-decoration: underline;}
+
+/*--bottom footer : Copyright*/
+.final-footer{
+    padding: 1.5em;
+    background-color: black;
+    color: white;
+}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

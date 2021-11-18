@@ -1,0 +1,32 @@
+/*CSS enlazado a cajas.html*/
+
+* {
+  /* margin-left: 10px;
+    margin-right: 10px; */
+  margin: 0px 10px;
+}
+
+h1 {
+  padding: 0.5em;
+  margin: 1em 0em;
+  /* margin-top: 1em;
+    margin-bottom: 1em;  */
+  border: 2px solid blue;
+}
+
+h2 {
+  padding-left: 0.5em;
+  margin: 0.75em 0em;
+  border: 2px solid #999;
+}
+
+ul {
+  margin: 1em 0em;
+  outline: 2px solid rgb(0, 255, 0);
+}
+
+li{margin: 1em;}
+
+/* :not(li) {margin: 10px;} */
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

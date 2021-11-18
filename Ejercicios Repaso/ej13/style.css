@@ -1,0 +1,17 @@
+/*CSS enlazado a flotantes.html*/
+
+.derecha{float: right;}
+
+.izquierda {float: left;}
+
+.clear{clear: both;} /*"genera un salto de línea para hacer uso efectivo del diseño en todo tipo de resoluciones"
+                        -- *problemas mencionados en clase, por ejemplo, con resoluciones ultra wide.*/
+
+.derechanoafectado {
+    float: right;
+    clear: right;
+}
+
+.parrafonoafectado{clear: right;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

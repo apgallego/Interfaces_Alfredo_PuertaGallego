@@ -1,0 +1,40 @@
+/*CSS enlazado a Ejercicio 1 (cabecera)_APG.html -- Examen 1*/
+
+.cabecera{
+    margin: auto;
+    padding: 2em;
+    width: 80%;
+    height: 9rem;
+    position: sticky;
+    top: 0px;
+    border: 1px solid black;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px blue;
+    background-color: white;
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-origin: content-box;
+    background-size: 3em;
+}
+.cabecera > p{line-height: 2.5em;}
+
+article{
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    border: 1px solid black;
+    text-align: justify;
+    font-style: italic;
+    line-height: 2;
+    text-indent: 20px;
+}
+
+article::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

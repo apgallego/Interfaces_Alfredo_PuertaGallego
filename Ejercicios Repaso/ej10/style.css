@@ -1,0 +1,78 @@
+/*CSS enlazado a posicionamiento.html*/
+
+*{
+    margin: 0;
+}
+
+/*línea  horizontal*/
+div#posicionamiento1{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+/*línea  vertical*/
+div#posicionamiento2{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+/*caja azul oscuro*/
+div#posicionamiento3{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*caja verde*/
+div#posicionamiento4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*caja roja*/
+div#posicionamiento5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/*caja naranja*/
+div#posicionamiento6{
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+}
+
+/*caja rosa*/
+div#posicionamiento7{
+	position: absolute; 
+	top: 50%; 
+	right: 0;			
+}
+
+/*caja lima*/
+div#posicionamiento8{
+	position: absolute;
+	top: 70px;
+	left: 100px;			
+}
+
+/*caja azul claro pequeña*/
+div#posicionamiento9{
+	position: absolute; 
+	top: 25%;
+	right: 25%;			
+}
+
+/*caja azul claro grande*/
+div#posicionamiento10{
+	position: absolute; 
+	top: 50%; 
+	right: 50%;
+	transform: translate(50%, -50%)
+}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/

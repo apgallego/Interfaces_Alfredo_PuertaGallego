@@ -1,0 +1,40 @@
+/*CSS enlazado a index.html (Ejercicio 3 - Flexbox)*/
+
+.contenedor{
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px 1px; /*sombra para que se aprecien los bordes de las cajas interiores*/
+    background-color: rgb(31, 31, 190);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+
+.cajas{
+    display: flex;
+    background-color: rgb(97, 146, 177);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    width: 6.5em;
+    height: 6.5em;
+}
+
+#cont1{
+    justify-content: space-around;
+    align-content: center;
+}
+
+#cont1 > .cajas:nth-child(5){align-self: baseline;}
+
+#cont2{
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#cont2 > .cajas:nth-child(5){align-self: flex-end;}
+
+/*ALFREDO PUERTA GALLEGO - DW2E*/
