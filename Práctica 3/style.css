@@ -306,6 +306,10 @@ section > aside{
 }
 
 @media screen and (max-width: 576px){
+    div.nav-container ul{
+        margin-bottom: 10px;
+        gap: 5px;
+    }
     div.nav-container ul li{margin: 10px;}
     div.others{flex-direction: column;}
     .footer-box{display: none;}
