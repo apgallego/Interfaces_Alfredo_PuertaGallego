@@ -94,6 +94,7 @@ nav{background-color: white;}
 .main-side-top-bar > p::before{
     content: url('misc/black_circle.png');
     margin-right: 10px;
+    text-align: center;
 }
 
 .main-side-top-bar{
@@ -103,6 +104,7 @@ nav{background-color: white;}
     font-weight: bold;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
 }
 
@@ -283,17 +285,13 @@ section > aside{
         margin-bottom: 20px;
     }
     div.nav-container ul li{margin: 20px;}
-    /* div.nav-container ul li::before,
-    div.nav-container ul li::after{
-        content: ' || ';
-        color: #CCC;
-    } */
     div.nav-container div.nav-img img{width: 80px;}
 
     div.article-text{width: 80vw;}
     div.main-footer{flex-direction: column;}
+    div.main-footer a {justify-content: center; text-align: center;}
     div.footer-button{margin: 4em 0 2em 0;}
-    div#article-button a{justify-content: center;}
+    div#article-button a{justify-content: center; text-align: center;}
 
     div.others{flex-wrap: nowrap;}
     div.others ul{padding: 0;}
@@ -308,6 +306,7 @@ section > aside{
 }
 
 @media screen and (max-width: 576px){
+    div.nav-container ul li{margin: 10px;}
     div.others{flex-direction: column;}
     .footer-box{display: none;}
     .footer-theme-box{display: flex;}
