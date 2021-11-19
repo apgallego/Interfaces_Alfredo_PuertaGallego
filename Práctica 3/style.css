@@ -271,7 +271,7 @@ section > aside{
 
 /* ------- RWD ------- */
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
     header{text-align: center;}
     div.nav-container{flex-direction: column;}
 
@@ -302,12 +302,12 @@ section > aside{
     #footer-list1, #footer-list2, #footer-list3{width: 10em}
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 768px){
     #footer-list1, #footer-list2, #footer-list3{width: 7em}
     div.nav-container div.nav-img img{display: none;}
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 576px){
     div.others{flex-direction: column;}
     .footer-box{display: none;}
     .footer-theme-box{display: flex;}
