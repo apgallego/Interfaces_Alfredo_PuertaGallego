@@ -1,4 +1,4 @@
-/*CSS enlazado a index.html (Práctica 1)*/
+/*CSS enlazado a index.html (Práctica 3)*/
 
 /*globales*/
 *{
@@ -138,11 +138,6 @@ nav{background-color: white;}
     transition: all ease-in-out 0.2s;
 
     /*POSIBLE MEJORA: Cuadrados naranjas con background-image*/
-    /* background-image: url('misc/otros/orange_square.png');
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position: center;
-    background-attachment: local; */
 }
 
 .carrousel-box-content:hover{
@@ -289,9 +284,9 @@ section > aside{
 
     div.article-text{width: 80vw;}
     div.main-footer{flex-direction: column;}
-    div.main-footer a {justify-content: center; text-align: center;}
+    div.main-footer a {text-align: center;}
     div.footer-button{margin: 4em 0 2em 0;}
-    div#article-button a{justify-content: center; text-align: center;}
+    div#article-button a{text-align: center;}
 
     div.others{flex-wrap: nowrap;}
     div.others ul{padding: 0;}
@@ -303,6 +298,7 @@ section > aside{
 @media screen and (max-width: 768px){
     #footer-list1, #footer-list2, #footer-list3{width: 7em}
     div.nav-container div.nav-img img{display: none;}
+    div.nav-container ul li{margin: 10px;}
 }
 
 @media screen and (max-width: 576px){
@@ -310,7 +306,6 @@ section > aside{
         margin-bottom: 10px;
         gap: 5px;
     }
-    div.nav-container ul li{margin: 10px;}
     div.others{flex-direction: column;}
     .footer-box{display: none;}
     .footer-theme-box{display: flex;}
