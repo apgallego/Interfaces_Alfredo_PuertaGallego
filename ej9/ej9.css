@@ -1,0 +1,26 @@
+.title{
+    width: 200px;
+    height: 100px;
+    margin-left: 80%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-name: rotateTitle;
+    /* animation: rotateTitle 4s linear; */
+    transform: rotate(0deg);
+}
+
+@keyframes rotateTitle{
+    0%{
+        transform: rotate(0deg);
+        /*lo hacemos con margin porque es un valor numérico, a diferencia de float*/
+        margin-left: 80%;
+    }
+    /*sergio incluye aquí los demás porcentajes
+        pero no es necesario*/
+    100%{
+        transform: rotate(360deg);
+        margin-left: 0;
+    }
+
+}

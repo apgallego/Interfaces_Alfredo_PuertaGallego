@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+           
+            /* @keyframes changeOpacity{
+                from {opacity: 0;}
+                to {opacity: 1;}
+            } */
+            /* EN FIREFOX NO FUNCIONA LA ANIMACIÓN DE TRANSICIÓN (DESVANECIMIENTO)*/
+            .image{
+                width: 200px;
+                height: 200px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                /* background-image: url('img/html.png'); */
+                background-image: url('img/1.jpg');
+                animation: changeImg 8s  infinite; /*, 1.5s changeOpacity infinite;*/
+                /* transition: background-image 1s; */
+            }
+            
+            @keyframes changeImg{
+                0%{
+                    background-image: url('img/1.jpg');
+                    /* background-image: url('img/html.png'); */
+                }
+                25%{
+                    background-image: url('img/2.jpg');
+                    /* background-image: url('img/css.png'); */
+                }
+                50%{
+                    background-image: url('img/3.jpg');
+                    /* background-image: url('img/js.png'); */
+                }
+                75%{
+                    background-image: url('img/4.jpg');
+                    /* background-image: url('img/bootstrap.png'); */
+                }
+                100%{
+                    background-image: url('img/1.jpg');
+                    /* background-image: url('img/html.png'); */
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="image"></div>
+    </body>
+</html>
